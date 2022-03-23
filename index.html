@@ -1,23 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header class="header">
         <div class="wrapper">
             <div class="container">
                 <div class="header__inner">
-                    
+                    <a class="logo header__logo" href="#">
+                        <img class="header__logo-img" src="./images/logo-main.svg" alt="">
+                    </a>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    About us
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    Services
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    Blog
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__top">
+                        <a class="header__top-logo" href="tel:18002652452">
+                            <img class="header__top-img" src="./images/phone-icon.svg" alt="">
+                        </a>
+                        <div class="header__top-box">
+                            <p class="header__top-text">
+                                Road Assistance
+                            </p>
+                            <a class="header__top-phone" href="tel:18002652452">
+                                1800 265 24 52
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__body">
+                <div class="container">
+                    <div class="header__body-inner">
+                        <div class="header__content">
+                            <h1 class="header__title">
+                                Get your vehicle service done online at one place
+                            </h1>
+                            <div class="header__box">
+                                <a class="header__box-btn button" href="">
+                                    Book a service
+                                </a>
+                                <a class="header__box-link" href="https://www.youtube.com/watch?v=tEupCSie04I" data-fancybox>
+                                    <img class="header__box-img" src="./images/play-icon.svg" alt="">
+                                    <p class="header__box-text">
+                                        Play Video
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="header__bottom">
+                                <img class="header__bottom-img" src="./images/time-icon.svg" alt="">
+                                <div class="header__bottom-items">
+                                    <p class="header__bottom-top">
+                                        We are open
+                                    </p>
+                                    <p class="header__bottom-time">
+                                        Monday to Friday 9:00 AM to 10:00 AM
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__wrapper">
+                            <img class="header__body-img" src="./images/img-header.jpg" alt="">
+                            <div class="header__frame header__service">
+                                <img src="./images/24.svg" alt="" class="header__service-img">
+                                <p class="header__service-text">
+                                    Quick service
+                                </p>
+                            </div>
+                            <div class="header__frame header__rate">
+                                <div class="header__rate-box">
+                                    <p class="header__rate-num">4.5/5</p>
+                                    <p class="header__rate-score">Rating</p>
+                                </div>
+                                <div id="rateYo">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
 <script src="js/main.js"></script>
+
 </html>
