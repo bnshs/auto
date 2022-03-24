@@ -22,6 +22,13 @@ html, body {
     border-radius: 12px;
 }
 
+.title {
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 76px;
+    letter-spacing: -0.03em;
+}
+
 /* --------------------------------------------- */
 
 .header__inner {
@@ -163,7 +170,7 @@ html, body {
     align-self: center;
 }
 
-.header__rate{
+.header__rate {
     bottom: 70px;
     right: -20px;
     padding: 24px 39px;
@@ -171,18 +178,97 @@ html, body {
     align-items: center;
 }
 
-.header__rate-box{
+.header__rate-box {
     margin-right: 15px;
 }
 
-.header__rate-num{
+.header__rate-num {
     font-size: 24px;
     line-height: 36px;
     letter-spacing: -0.03em;
 }
 
-.header__rate-score{
+.header__rate-score {
     font-weight: 500;
     line-height: 24px;
     opacity: 0.7;
+}
+
+/* ----------------------------------------------------- */
+
+.offers {
+    background: #F2F2F2;
+    padding: 128px 0;
+}
+
+.offers__subtitle {
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    margin-bottom: 8px;
+}
+
+.offers__title {
+    max-width: 860px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 64px;
+}
+
+.offers__items {
+    display: grid;
+    grid-template-columns: 316px 316px 316px 316px;
+    grid-template-rows: 232px 232px;
+    gap: 8px 8px;
+}
+
+.offers__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offers__text {
+    margin-top: 16px;
+}
+
+.offers__link {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.03em;
+}
+
+.offers__link:hover {
+    background: #FF6433;
+    color: #FFFFFF;
+    transition: all .3s;
+}
+
+.offers__link:hover svg path {
+    fill: #FFFFFF;
+    transition: all .3s;
+}
+
+.offers__link-inner{
+    text-align: end;
+}
+
+.offers__link-bottom {
+    font-size: 18px;
+    line-height: 175%;
+    margin-top: 32px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.offers__link-img{
+    margin-left: 16px;
 }
