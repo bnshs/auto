@@ -44,6 +44,12 @@ html, body {
     color: #FFFFFF;
 }
 
+.additonal__title {
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.03em;
+}
+
 /* --------------------------------------------- */
 
 .header__inner {
@@ -452,7 +458,7 @@ html, body {
     border: none;
 }
 
-.blog__filter-btn:last-child{
+.blog__filter-btn:last-child {
     margin-right: 0;
 }
 
@@ -476,4 +482,114 @@ html, body {
 
 .blog__small-title {
     margin-bottom: 16px;
+}
+
+/* ------------------------------------- */
+
+.customers {
+    background-color: #F2F2F2;
+    padding: 128px 0 206px;
+}
+
+.customers__inner{
+    position: relative;
+}
+
+.customers__title{
+    max-width: 909px;
+    margin: 0 auto 76px;
+    text-align: center;
+}
+
+.customers__item {
+    background-color: #fff;
+    padding: 72px;
+    max-width: 616px;
+    margin-right: 48px;
+}
+
+.customers__items .slick-list{
+    margin-right: -48px;
+}
+
+.customers__wrap {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.customers__box {
+    margin-left: 16px;
+}
+
+.customers__city {
+    color: #939191;
+}
+
+.customers__item-text {
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.03em;
+}
+
+.customers__arrows{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 23px;
+}
+
+.customers__arrow{
+    position: absolute;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 3.2;
+    transition: all .3s;
+    
+}
+
+.customers__arrow-prev{
+    right: 70px;
+}
+
+.customers__arrow:last-child{
+    margin-right: 0;
+}
+
+.customers__arrow:hover{
+    width: 62px;
+    height: 62px;
+    background-color: #1E1B1B;
+    line-height: 4;
+    top: -6px;
+}
+
+.customers__arrow:hover path{
+    fill: #F2F2F2;
+}
+
+.slick-dots{
+    position: absolute;
+    display: flex;
+    bottom: -60px;
+    right: 40%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.slick-dots button{
+    font-size: 0;
+    width: 32px;
+    height: 4px;
+    background-color: #939191;
+}
+
+.slick-dots li{
+    margin-right: 10px;
+}
+
+.slick-active button{
+    background-color: #FF6433;
 }
