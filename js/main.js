@@ -25,5 +25,18 @@ $(function () {
         $('.customers__arrow-next').on('click', function (e){
           e.preventDefault()
           $('.customers__items').slick('slickNext')
-          })
+          });
+
+      $('.faq__box-link').on('click', function (e){
+        e.preventDefault()
+        if ($(this).hasClass('faq__box-link--active')) {
+          $(this).removeClass('faq__box-link--active')
+          $(this).children('.faq__item-text').slideUp()
+        } else{
+          $('.faq__box-link').removeClass('faq__box-link--active')
+          $('.faq__item-text').slideUp()
+          $(this).addClass('faq__box-link--active')
+          $(this).children('.faq__item-text').slideDown()
+        }
+      })
   });
