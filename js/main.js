@@ -2,7 +2,7 @@ $(function () {
  
   var mixer = mixitup('.blog__items');
 
-    $("#rateYo").rateYo({
+    $(".rateYo").rateYo({
    
       "rating" : 4.5,
       normalFill: "#D7D1C7",
@@ -17,6 +17,15 @@ $(function () {
       draggable: false,
       waitForAnimate: false,
       dots: true,
+      responsive:
+      [
+        {
+          breakpoint: 980,
+          settings: {
+            slidesToShow: 1,
+          },
+        }
+      ]
     })
       $('.customers__arrow-prev').on('click', function (e){
         e.preventDefault()
@@ -38,5 +47,12 @@ $(function () {
           $(this).addClass('faq__box-link--active')
           $(this).children('.faq__item-text').slideDown()
         }
+      })
+
+      $('.burger, .overlay').on('click', function (e){
+        e.preventDefault()
+        $('.header__inner').toggleClass('header__inner--opened')
+        $('.overlay').toggleClass('overlay--show')
+        $('.burger').toggleClass('burger--opened')
       })
   });
